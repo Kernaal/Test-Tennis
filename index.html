@@ -26,21 +26,23 @@
             </form>
             <p id="login-error" style="color: red; display: none;">Mot de passe incorrect.</p>
         </section>
-        <section id="daily-bets" style="display:none;">
+        <section id="daily-bets">
             <h2>Paris du Jour</h2>
             <ul id="bets-list">
                 <!-- Les paris seront ajoutés ici dynamiquement -->
             </ul>
-            <h3>Ajouter un Nouveau Paris</h3>
-            <form id="bet-form">
-                <label for="match">Match :</label>
-                <input type="text" id="match" name="match" required><br>
-                <label for="bet">Paris :</label>
-                <input type="text" id="bet" name="bet" required><br>
-                <label for="odds">Cote :</label>
-                <input type="text" id="odds" name="odds" required><br>
-                <button type="submit">Ajouter</button>
-            </form>
+            <div id="admin-section" style="display: none;">
+                <h3>Ajouter un Nouveau Paris</h3>
+                <form id="bet-form">
+                    <label for="match">Match :</label>
+                    <input type="text" id="match" name="match" required><br>
+                    <label for="bet">Paris :</label>
+                    <input type="text" id="bet" name="bet" required><br>
+                    <label for="odds">Cote :</label>
+                    <input type="text" id="odds" name="odds" required><br>
+                    <button type="submit">Ajouter</button>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
