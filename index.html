@@ -17,7 +17,16 @@
         </ul>
     </nav>
     <main>
-        <section id="daily-bets">
+        <section id="login-section">
+            <h2>Connexion</h2>
+            <form id="login-form">
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password" required><br>
+                <button type="submit">Se connecter</button>
+            </form>
+            <p id="login-error" style="color: red; display: none;">Mot de passe incorrect.</p>
+        </section>
+        <section id="daily-bets" style="display:none;">
             <h2>Paris du Jour</h2>
             <ul id="bets-list">
                 <!-- Les paris seront ajoutés ici dynamiquement -->
