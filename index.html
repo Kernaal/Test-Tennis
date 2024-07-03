@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Tennis</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
@@ -17,16 +18,21 @@
     </nav>
     <main>
         <section id="daily-bets">
-    <h2>Paris du Jour</h2>
-    <ul>
-        <li>
-            <strong>Match :</strong> Lloyd Harris VS Ben Shelton<br>
-            <strong>Paris :</strong> Victoire de Ben Shelton<br>
-            <strong>Cote :</strong> 1.751
-        </li>
-    </ul>
-</section>
-
+            <h2>Paris du Jour</h2>
+            <ul id="bets-list">
+                <!-- Les paris seront ajoutés ici dynamiquement -->
+            </ul>
+            <h3>Ajouter un Nouveau Paris</h3>
+            <form id="bet-form">
+                <label for="match">Match :</label>
+                <input type="text" id="match" name="match" required><br>
+                <label for="bet">Paris :</label>
+                <input type="text" id="bet" name="bet" required><br>
+                <label for="odds">Cote :</label>
+                <input type="text" id="odds" name="odds" required><br>
+                <button type="submit">Ajouter</button>
+            </form>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Test Tennis</p>
